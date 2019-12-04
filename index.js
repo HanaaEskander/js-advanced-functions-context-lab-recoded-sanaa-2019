@@ -110,4 +110,5 @@ let findEmployeebyFirstName = function(srcArray, firstName) {
 }
 
 let calculatePayroll = function(array) {
-    ret
+        return array.reduce((m, e) => m + allWagesFor.call(e), 0);
+}
