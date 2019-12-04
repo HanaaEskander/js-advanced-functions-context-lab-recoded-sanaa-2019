@@ -1,26 +1,27 @@
+
 //* Your Code Here */
-let createEmployeeRecord = empArr => {
+let createEmployeeRecord = employeeArray => {
     return {
-        firstName: empArr[0],
-        familyName: empArr[1],
-        title: empArr[2],
-        payPerHour: empArr[3],
+        firstName: employeeArray[0],
+        familyName: employeeArray[1],
+        title: employeeArray[2],
+        payPerHour: employeeArray[3],
         timeInEvents: [],
         timeOutEvents: []
     };
 };
 
-let createEmployees = arr => {
-  return arr.map(function(e){
+let createEmployees = array => {
+  return array.map(function(e){
     return createEmployeeRecord(e);
   });
 };
 
-let createEmployeeRecords = empArrs => {
-    let empCollection = empArrs.map(emp => {
+let createEmployeeRecords = employeeArray1 => {
+    let empC = employeeArray1.map(emp => {
         return createEmployeeRecord(emp);
     });
-    return empCollection;
+    return empC;
 };
 
 let createTimeInEvent = function(timeStamp) {
